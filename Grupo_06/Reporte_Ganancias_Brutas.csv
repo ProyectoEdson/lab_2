@@ -1,5 +1,125 @@
 ID,Nombre,Categoría,Precio Unitario,Cantidad Vendida,Subtotal Venta,Ganancia
-,,Electronica,,,0.00,0.00
-,,Accesorios,,,0.00,0.00
-,,Redes,,,0.00,0.00
-,,TOTALES,,,0.00,0.00
+1,Monitor,Electronica,120.00,3,360.00,72.00
+2,Teclado,Electronica,30.00,6,180.00,36.00
+3,Mouse,Electronica,25.00,8,200.00,40.00
+4,Impresora,Electronica,200.00,2,400.00,80.00
+5,Router,Redes,80.00,5,400.00,60.00
+6,Camara Web,Electronica,45.00,7,315.00,63.00
+7,Altavoz,Electronica,60.00,4,240.00,48.00
+8,Disco Duro,Electronica,90.00,3,270.00,54.00
+9,USB,Accesorios,15.00,20,300.00,30.00
+10,SSD,Electronica,150.00,6,900.00,180.00
+11,Silla,Accesorios,75.00,10,750.00,75.00
+12,Escritorio,Accesorios,150.00,5,750.00,75.00
+13,Lampara,Accesorios,40.00,12,480.00,48.00
+14,Archivador,Accesorios,60.00,4,240.00,24.00
+15,Estanteria,Accesorios,90.00,3,270.00,27.00
+16,Taburete,Accesorios,35.00,9,315.00,31.50
+17,Cajonera,Accesorios,80.00,7,560.00,56.00
+18,Soporte Monitor,Accesorios,25.00,15,375.00,37.50
+19,Alfombrilla,Accesorios,10.00,18,180.00,18.00
+20,Organizador,Accesorios,20.00,14,280.00,28.00
+21,Martillo,Accesorios,25.00,15,375.00,37.50
+22,Destornillador,Accesorios,15.00,20,300.00,30.00
+23,Taladro,Accesorios,80.00,6,480.00,48.00
+24,Sierra,Accesorios,60.00,7,420.00,42.00
+25,Llave Inglesa,Accesorios,40.00,12,480.00,48.00
+26,Cinta Métrica,Accesorios,10.00,18,180.00,18.00
+27,Pinzas,Accesorios,20.00,13,260.00,26.00
+28,Alicates,Accesorios,15.00,16,240.00,24.00
+29,Cincel,Accesorios,18.00,14,252.00,25.20
+30,Espátula,Accesorios,8.00,22,176.00,17.60
+31,Camiseta,Accesorios,15.00,25,375.00,37.50
+32,Pantalon,Accesorios,30.00,20,600.00,60.00
+33,Chaqueta,Accesorios,60.00,12,720.00,72.00
+34,Zapatos,Accesorios,50.00,15,750.00,75.00
+35,Gorra,Accesorios,12.00,30,360.00,36.00
+36,Calcetines,Accesorios,5.00,50,250.00,25.00
+37,Guantes,Accesorios,10.00,35,350.00,35.00
+38,Bufanda,Accesorios,15.00,22,330.00,33.00
+39,Cinturon,Accesorios,20.00,18,360.00,36.00
+40,Sombrero,Accesorios,25.00,12,300.00,30.00
+41,Libro,Accesorios,20.00,40,800.00,80.00
+42,Cuaderno,Accesorios,3.00,100,300.00,30.00
+43,Manual,Accesorios,25.00,35,875.00,87.50
+44,Revista,Accesorios,7.00,60,420.00,42.00
+45,Enciclopedia,Accesorios,50.00,10,500.00,50.00
+46,Diccionario,Accesorios,30.00,15,450.00,45.00
+47,Atlas,Accesorios,40.00,8,320.00,32.00
+48,Novela,Accesorios,18.00,50,900.00,90.00
+49,Comic,Accesorios,12.00,80,960.00,96.00
+50,Ensayo,Accesorios,22.00,25,550.00,55.00
+51,Cafetera,Accesorios,100.00,8,800.00,80.00
+52,Microondas,Accesorios,150.00,5,750.00,75.00
+53,Licuadora,Accesorios,80.00,7,560.00,56.00
+54,Hervidor,Accesorios,40.00,10,400.00,40.00
+55,Olla,Accesorios,35.00,15,525.00,52.50
+56,Sartén,Accesorios,45.00,12,540.00,54.00
+57,Tostadora,Accesorios,30.00,9,270.00,27.00
+58,Batidora,Accesorios,50.00,6,300.00,30.00
+59,Exprimidor,Accesorios,25.00,11,275.00,27.50
+60,Cuchillo,Accesorios,15.00,20,300.00,30.00
+61,Monitor 4K,Electronica,300.00,2,600.00,120.00
+62,Teclado Mecanico,Electronica,70.00,4,280.00,56.00
+63,Mouse Inalambrico,Electronica,40.00,10,400.00,80.00
+64,Impresora Laser,Electronica,220.00,3,660.00,132.00
+65,Router WiFi6,Redes,130.00,5,650.00,97.50
+66,Camara IP,Electronica,90.00,6,540.00,108.00
+67,Altavoz Bluetooth,Electronica,75.00,7,525.00,105.00
+68,Disco Duro Externo,Electronica,110.00,4,440.00,88.00
+69,USB 3.0,Accesorios,20.00,30,600.00,60.00
+70,SSD NVMe,Electronica,180.00,5,900.00,180.00
+71,Silla Ejecutiva,Accesorios,130.00,6,780.00,78.00
+72,Escritorio Grande,Accesorios,200.00,4,800.00,80.00
+73,Lampara LED,Accesorios,55.00,9,495.00,49.50
+74,Archivador Metalico,Accesorios,100.00,3,300.00,30.00
+75,Estanteria de Madera,Accesorios,120.00,5,600.00,60.00
+76,Taburete Ajustable,Accesorios,50.00,7,350.00,35.00
+77,Cajonera con Ruedas,Accesorios,110.00,4,440.00,44.00
+78,Soporte para Laptop,Accesorios,35.00,12,420.00,42.00
+79,Alfombrilla Grande,Accesorios,18.00,20,360.00,36.00
+80,Organizador de Escritorio,Accesorios,28.00,15,420.00,42.00
+81,Martillo de Acero,Accesorios,35.00,10,350.00,35.00
+82,Destornillador Magnetico,Accesorios,25.00,18,450.00,45.00
+83,Taladro Inalambrico,Accesorios,110.00,5,550.00,55.00
+84,Sierra Circular,Accesorios,85.00,6,510.00,51.00
+85,Set Llave Inglesa,Accesorios,55.00,8,440.00,44.00
+86,Cinta Métrica de 10m,Accesorios,15.00,20,300.00,30.00
+87,Pinzas de Precisión,Accesorios,30.00,12,360.00,36.00
+88,Alicates Multiusos,Accesorios,25.00,14,350.00,35.00
+89,Cincel para Madera,Accesorios,22.00,16,352.00,35.20
+90,Espátula de Acero,Accesorios,12.00,25,300.00,30.00
+91,Camiseta Algodón,Accesorios,18.00,30,540.00,54.00
+92,Pantalon Jeans,Accesorios,40.00,18,720.00,72.00
+93,Chaqueta Impermeable,Accesorios,70.00,10,700.00,70.00
+94,Zapatos Deportivos,Accesorios,65.00,12,780.00,78.00
+95,Gorra Deportiva,Accesorios,15.00,25,375.00,37.50
+96,Calcetines Deportivos,Accesorios,8.00,40,320.00,32.00
+97,Guantes de Lana,Accesorios,12.00,28,336.00,33.60
+98,Bufanda de Algodón,Accesorios,20.00,22,440.00,44.00
+99,Cinturon de Cuero,Accesorios,30.00,18,540.00,54.00
+100,Sombrero de Paja,Accesorios,35.00,14,490.00,49.00
+101,Libro de Cocina,Accesorios,25.00,30,750.00,75.00
+102,Cuaderno A5,Accesorios,4.00,120,480.00,48.00
+103,Manual de Jardinera,Accesorios,28.00,18,504.00,50.40
+104,Revista de Ciencia,Accesorios,9.00,40,360.00,36.00
+105,Enciclopedia Universal,Accesorios,60.00,8,480.00,48.00
+106,Diccionario Español,Accesorios,35.00,14,490.00,49.00
+107,Atlas Geográfico,Accesorios,45.00,10,450.00,45.00
+108,Novela de Aventuras,Accesorios,20.00,50,1000.00,100.00
+109,Comic Superheroes,Accesorios,15.00,70,1050.00,105.00
+110,Ensayo Filosófico,Accesorios,25.00,22,550.00,55.00
+111,Cafetera Express,Accesorios,120.00,7,840.00,84.00
+112,Microondas Digital,Accesorios,180.00,5,900.00,90.00
+113,Licuadora Profesional,Accesorios,90.00,6,540.00,54.00
+114,Hervidor Electrico,Accesorios,50.00,11,550.00,55.00
+115,Olla a Presión,Accesorios,40.00,14,560.00,56.00
+116,Sartén Antiadherente,Accesorios,55.00,10,550.00,55.00
+117,Tostadora de Pan,Accesorios,40.00,8,320.00,32.00
+118,Batidora Manual,Accesorios,60.00,5,300.00,30.00
+119,Exprimidor Manual,Accesorios,30.00,13,390.00,39.00
+120,Cuchillo Chef,Accesorios,25.00,22,550.00,55.00
+,,Electronica,,,7210.00,1442.00
+,,Accesorios,,,49235.00,4923.50
+,,Redes,,,1050.00,157.50
+,,TOTALES,,,57495.00,6523.00
