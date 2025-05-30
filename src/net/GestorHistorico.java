@@ -10,15 +10,17 @@ import java.util.stream.Stream;
 public class GestorHistorico {
 
     // Atributos privados encapsulados en esta clase
-    private final Path rutaDirectorioGrupo;
+    private final Path rutaDirectorioBase; // Lab2
+    private final Path rutaDirectorioGrupo; // Lab2/Grupo_06
     private String nombreDirectorioHistorico;
     private Path rutaDirectorioHistorico;
     private String nombreArchivoOrigen;
 
-    public GestorHistorico(Path rutaDirectorioGrupo, String nombreDirectorioHistorico, String nombreArchivoOrigen) {
+    public GestorHistorico(Path rutaDirectorioBase, String nombreDirectorioHistorico, String nombreArchivoOrigen, Path rutaDirectorioGrupo) {
+        this.rutaDirectorioBase = rutaDirectorioBase;
         this.rutaDirectorioGrupo = rutaDirectorioGrupo;
         this.nombreDirectorioHistorico = nombreDirectorioHistorico;
-        this.rutaDirectorioHistorico = Paths.get(rutaDirectorioGrupo.toString(), nombreDirectorioHistorico);
+        this.rutaDirectorioHistorico = Paths.get(rutaDirectorioBase.toString(), nombreDirectorioHistorico);
         this.nombreArchivoOrigen = nombreArchivoOrigen;
     }
 
@@ -29,7 +31,7 @@ public class GestorHistorico {
     public void ArchivarReporte() {
         System.out.println("\n--- Procesando el Histórico de Reportes ---");
 
-        // 1. Crear directorio Historico
+        // 1. Crear directorio Historico dentro de Lab2
         boolean directorioHistoricoCreado = CrearDirectorioHistorico();
         if (!directorioHistoricoCreado) {
             System.err.println("No se pudo crear la carpeta '" + nombreDirectorioHistorico + "'. No se puede archivar el reporte.");

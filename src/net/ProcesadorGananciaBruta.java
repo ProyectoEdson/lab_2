@@ -11,9 +11,9 @@ import java.nio.file.Paths;
 public class ProcesadorGananciaBruta {
 
     // Atributos privados encapsulados en esta clase
-    private static final double PORCENTAJE_GANANCIA_ELECTRONICA = 0.20; // 20%
-    private static final double PORCENTAJE_GANANCIA_ACCESORIOS = 0.10;  // 10%
-    private static final double PORCENTAJE_GANANCIA_REDES = 0.15;     // 15%
+    private static final double PorcentajeGananciaElectronica = 0.20; // 20%
+    private static final double PorcentajeGananciaAccesorios = 0.10;  // 10%
+    private static final double PorcentajeGananciaRedes = 0.15;     // 15%
 
     private Path rutaDirectorioGrupo;
     private String nombreArchivoEntrada;
@@ -25,10 +25,7 @@ public class ProcesadorGananciaBruta {
         this.nombreArchivoSalida = nombreArchivoSalida;
     }
 
-    /**
-     * Lee datos del archivo de entrada (equipos.csv), los procesa para calcular la ganancia bruta
-     * y escribe el reporte en el archivo de salida (Reporte_Ganancias_Brutas.csv).
-     */
+
     public void ProcesarDatosVentas() {
         Path rutaArchivoEntrada = Paths.get(rutaDirectorioGrupo.toString(), nombreArchivoEntrada);
         Path rutaArchivoSalida = Paths.get(rutaDirectorioGrupo.toString(), nombreArchivoSalida);
@@ -74,22 +71,23 @@ public class ProcesadorGananciaBruta {
 
                         switch (categoriaMinusculas) {
                             case "electronica":
-                                ganancia = subtotalVenta * PORCENTAJE_GANANCIA_ELECTRONICA;
+                                ganancia = subtotalVenta * PorcentajeGananciaElectronica;
                                 totalVentasElectronica += subtotalVenta;
                                 totalGananciaElectronica += ganancia;
                                 break;
                             case "accesorios":
-                                ganancia = subtotalVenta * PORCENTAJE_GANANCIA_ACCESORIOS;
+                                ganancia = subtotalVenta * PorcentajeGananciaAccesorios;
                                 totalVentasAccesorios += subtotalVenta;
                                 totalGananciaAccesorios += ganancia;
                                 break;
                             case "redes":
-                                ganancia = subtotalVenta * PORCENTAJE_GANANCIA_REDES;
+                                ganancia = subtotalVenta * PorcentajeGananciaRedes;
                                 totalVentasRedes += subtotalVenta;
                                 totalGananciaRedes += ganancia;
                                 break;
                             default:
-                                System.out.println("ADVERTENCIA: Categoría inesperada encontrada para el producto " + idProducto + ": " + categoriaProducto + ". Ganancia no calculada.");
+                                System.out.println("Categoría desconocida encontrada: " + categoriaProducto + " para el producto: " + nombreProducto);
+                                // Opcionalmente, asignar una ganancia por defecto o saltar
                                 break;
                         }
 
@@ -101,7 +99,9 @@ public class ProcesadorGananciaBruta {
                         System.err.println("Error de formato numérico en la línea: " + linea + " - " + e.getMessage());
                     }
                 } else {
-                    System.err.println("Línea con formato incorrecto (se esperaban 5 campos CSV): " + linea);
+                    if (!linea.trim().isEmpty()){
+                        System.err.println("Línea con formato incorrecto (se esperaban 5 campos CSV): " + linea);
+                    }
                 }
             }
 

@@ -14,8 +14,8 @@ public class ProcesadorGananciaNeta {
 
 
     // Atributos privados encapsulados en esta clase
-    private static final double TASA_IMPUESTO = 0.07;     // 7% de impuesto
-    private static final double TASA_COMISION = 0.05; // 5% de comisión
+    private static final double impuesto = 0.07;     // 7% de impuesto
+    private static final double comision = 0.05; // 5% de comisión
 
     private Path rutaDirectorioGrupo;
     private String nombreArchivoEntradaBruta;
@@ -76,8 +76,8 @@ public class ProcesadorGananciaNeta {
                         subtotalVenta = Double.parseDouble(partes[5].trim());
                         gananciaBruta = Double.parseDouble(partes[6].trim());
 
-                        double impuestoCalculado = gananciaBruta * TASA_IMPUESTO;
-                        double comisionCalculada = gananciaBruta * TASA_COMISION;
+                        double impuestoCalculado = gananciaBruta * impuesto;
+                        double comisionCalculada = gananciaBruta * comision;
                         double gananciaNetaCalculada = gananciaBruta - impuestoCalculado - comisionCalculada;
 
                         // Actualizar totales por categoría

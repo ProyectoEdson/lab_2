@@ -1,7 +1,8 @@
-
 import net.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.Files;
+import java.io.IOException;
 import java.util.Locale;
 
 public class main {
@@ -25,6 +26,19 @@ public class main {
         final String nombreArchivoSalidaGananciasNetas = "Reporte_Ganancias_Netas.csv";
         final String nombreDirectorioHistorico = "Historico";
 
+        // Crear el directorio base Lab2 solo si no existe
+        if (!Files.exists(rutaBase)) {
+            try {
+                Files.createDirectories(rutaBase);
+                System.out.println("Directorio base '" + nombreDirectorioBase + "' creado en: " + rutaBase);
+            } catch (IOException e) {
+                System.err.println("Error al crear el directorio base '" + nombreDirectorioBase + "': " + e.getMessage());
+                return;
+            }
+        } else {
+            System.out.println("Directorio base '" + nombreDirectorioBase + "' ya existe en: " + rutaBase);
+        }
+
         // 1. Gestionar Directorios
         GestorDirectorios gestorDirectorios = new GestorDirectorios(rutaGrupo, nombreArchivoEntradaEquipos);
         if (!gestorDirectorios.CrearYVerificarDirectorios()) {
@@ -45,9 +59,9 @@ public class main {
         );
         procesadorNeta.GenerarReporteGananciaNeta();
 
-        // 4. Gestionar Histórico
+        // 4. Gestionar Histórico (ahora dentro de rutaBase/Lab2, no dentro de Grupo_06)
         GestorHistorico gestorHistorico = new GestorHistorico(
-                rutaGrupo, nombreDirectorioHistorico, nombreArchivoSalidaGananciasNetas
+                rutaBase, nombreDirectorioHistorico, nombreArchivoSalidaGananciasNetas, rutaGrupo
         );
         gestorHistorico.ArchivarReporte();
 

@@ -15,11 +15,7 @@ public class GestorDirectorios {
         this.nombreArchivoEntrada = nombreArchivoEntrada;
     }
 
-    /**
-     * Crea el directorio de grupo y el archivo de entrada si no existen.
-     * Muestra mensajes informativos al usuario.
-     * @return true si los directorios existen o fueron creados exitosamente, false de lo contrario.
-     */
+
     public boolean CrearYVerificarDirectorios() {
         try {
             Files.createDirectories(rutaDirectorioGrupo);
